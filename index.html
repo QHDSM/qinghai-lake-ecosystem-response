@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>青海湖流域生态系统结构与功能响应 · 研究路线与进展</title>
+<meta name="description" content="青海湖流域生态系统结构与功能响应项目：水位—生态响应技术路线、七个模型模块、执行进展、数据基座与阶段判断。">
+<meta name="author" content="QHDSM">
+<meta name="theme-color" content="#0c3d45">
+<meta property="og:title" content="青海湖流域生态系统结构与功能响应 · 研究路线与进展">
+<meta property="og:description" content="以水位为自变量，追踪湖岸、草场、鱼群与鸟群的连锁响应。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c3d45'/%3E%3Cpath d='M4 19c4-4 8 4 12 0s8 4 12 0' stroke='%23cfe4df' stroke-width='2' fill='none'/%3E%3Cpath d='M4 24c4-4 8 4 12 0s8 4 12 0' stroke='%237fa8a1' stroke-width='1.5' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="回到页首">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="15" fill="#0c3d45"/><path d="M5 18c4-4 8 3 11 0s7 3 11 0" fill="none" stroke="#cfe4df" stroke-width="1.8"/><path d="M5 23c4-4 8 3 11 0s7 3 11 0" fill="none" stroke="#7fa8a1" stroke-width="1.4"/><circle cx="16" cy="11" r="2.2" fill="#c9a35f"/></svg>
+      </span>
+      <span class="brand-text">青海湖 <em>生态系统响应</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="页面导航">
+      <a href="#overview">概览</a>
+      <a href="#route">技术路线</a>
+      <a href="#models">模型集</a>
+      <a href="#results">执行进展</a>
+      <a href="#data">数据基座</a>
+      <a href="#stage">阶段判断</a>
+      <a href="#delivery">交付</a>
+    </nav>
+    <div class="head-tools">
+      <button class="print-btn" type="button" onclick="window.print()" title="打印本页">打印</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="展开导航"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow">QINGHAI LAKE · WATER–GRASS–FISH–BIRD</p>
+      <h1>水位上升，<br>如何穿过湖岸、<br>草场、鱼群与鸟群？</h1>
+      <p class="lede">这是“青海湖流域生态系统结构与功能响应”研究。项目以持续上升的湖水位为自变量，追踪湖岸格局、生境质量、关键物种栖息地与“水—草—鱼—鸟”网络的连锁响应，最终给出可用的生态阈值与调控依据。</p>
+      <div class="hero-actions">
+        <a class="btn solid" href="#route">沿技术路线阅读</a>
+        <a class="btn ghost" href="#stage">先看阶段判断</a>
+      </div>
+      <p class="hero-note">资料截至 2026 年 10 月 · 基于 14 份工作文档与 1 份数据汇编整理</p>
+    </div>
+
+    <figure class="hero-figure">
+      <div class="figure-top">
+        <span>水位—综合生态功能响应</span>
+        <span class="tag">示意曲线 · 非计算结果</span>
+      </div>
+      <div id="heroChart" class="chart hero-chart" aria-hidden="true"></div>
+      <div class="figure-foot">
+        <span><i class="dot zone-a"></i>增益</span>
+        <span><i class="dot zone-b"></i>稳定</span>
+        <span><i class="dot zone-c"></i>转折</span>
+        <span><i class="dot zone-d"></i>衰退</span>
+        <span class="figure-foot-note">阈值待模拟标定</span>
+      </div>
+      <figcaption>项目要回答的不是“水位升了多少”，而是“升到哪里，系统开始换一种状态”。</figcaption>
+    </figure>
+  </section>
+
+  <section class="statband" aria-label="关键数字">
+    <div class="stat">
+      <b>3197.16</b><span>m · 2025 年湖水位</span>
+    </div>
+    <div class="stat">
+      <b>4657.9</b><span>km² · 2025 年湖面面积</span>
+    </div>
+    <div class="stat">
+      <b>605</b><span>条 · 水质记录（2020–2025）</span>
+    </div>
+    <div class="stat">
+      <b>7</b><span>个 · 模型功能模块</span>
+    </div>
+  </section>
+
+  <section class="section" id="overview">
+    <div class="sec-head">
+      <p class="sec-index">01 / OVERVIEW</p>
+      <h2>先看清这个项目在做什么</h2>
+      <p class="sec-lede">不是一次湖泊水位监测，而是一套“水位情景—生态响应—阈值调控”的耦合研究。研究对象从湖面一直延伸到鱼和鸟。</p>
+    </div>
+
+    <div class="brief-grid">
+      <article class="brief">
+        <span class="brief-num">01</span>
+        <h3>委托与定位</h3>
+        <p>对应商务技术文件第 91–93 页，由中国科学院青藏高原研究所负责。核心任务是解释水位持续上升引发的生态格局与系统稳定性变化。</p>
+        <p class="brief-meta">任务书 · 项目申请书</p>
+      </article>
+      <article class="brief">
+        <span class="brief-num">02</span>
+        <h3>核心科学问题</h3>
+        <p>水位变化如何重构“水—草—鱼—鸟”多营养级共生网络，并改变生态系统功能？哪里是敏感区，哪里是关键节点，哪里是临界水位？</p>
+        <p class="brief-meta">模型集 · 技术路线</p>
+      </article>
+      <article class="brief">
+        <span class="brief-num">03</span>
+        <h3>三项硬交付</h3>
+        <p>《水位—生态响应三维模型》《水位生态耦合演变轨迹数据集》《生态—水文功能协同演化图集》，均需通过专家评审。</p>
+        <p class="brief-meta">项目申请书 · 考核指标</p>
+      </article>
+    </div>
+
+    <div class="cross-note">
+      <span class="cn-label">两个同时发生的变量</span>
+      <p><b>水位持续上升</b>改变空间与淹没范围；<b>湖水盐度持续下降</b>改变生理过程与群落结构。两者叠加，才解释得通鱼群与鸟群的变化。</p>
+    </div>
+
+    <blockquote class="pull">
+      <p>主线只有一条：<strong>水位变化 → 生境格局重构 → 植被 / 鱼类 / 鸟类响应 → 多营养级网络重组 → 系统稳定性变化。</strong></p>
+    </blockquote>
+
+    <div class="task-lines">
+      <article><span>7.1</span><h4>湖岸区生态格局</h4><p>水位抬升对湖岸格局的重塑；淹没侵蚀对湖岸功能的影响。</p></article>
+      <article><span>7.2</span><h4>关键物种栖息地</h4><p>裸鲤产卵场向河口迁移；盐度下降与早期资源补充；鸟类繁殖岛与陆生物种栖息地。</p></article>
+      <article><span>7.3</span><h4>共生关系与稳定性</h4><p>网络结构的多层级影响、不同水位扰动下的抗风险能力、水位—结构功能耦合调控。</p></article>
+    </div>
+
+    <div class="object-row" aria-label="研究对象">
+      <span class="object-label">研究对象</span>
+      <span class="chip">湖泊水体</span>
+      <span class="chip">湖滨湿地</span>
+      <span class="chip">高寒草地</span>
+      <span class="chip">裸鲤</span>
+      <span class="chip">水鸟</span>
+      <span class="chip">普氏原羚</span>
+      <span class="chip">浮游生物</span>
+    </div>
+  </section>
+
+  <section class="section" id="route">
+    <div class="sec-head">
+      <p class="sec-index">02 / TECHNICAL ROUTE</p>
+      <h2>把“水位—生态”拆成八个可检查的环节</h2>
+      <p class="sec-lede">每个环节都标注输入、方法、产出与当前状态。点击任一环节，查看它在证据链上的位置。</p>
+    </div>
+
+    <div class="route-legend">
+      <span><i class="status-dot done"></i>已有结果</span>
+      <span><i class="status-dot partial"></i>试算中</span>
+      <span><i class="status-dot todo"></i>未闭环</span>
+      <span class="legend-note">状态为编者依据文档完成度判断</span>
+    </div>
+
+    <div class="route-grid" id="routeGrid">
+      <button class="route-step" type="button" data-step="1" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S01</span><i class="status-dot todo"></i></span>
+        <strong>水位情景设定</strong>
+        <span class="step-meta">S00–S06 · 历史 / 基准 / 三档上涨 / 极端 / 调控</span>
+        <span class="step-state">待填数</span>
+      </button>
+      <button class="route-step" type="button" data-step="2" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S02</span><i class="status-dot done"></i></span>
+        <strong>湖岸生态空间重构</strong>
+        <span class="step-meta">DEM · 岸线 · CLCD 30 m · 景观指数</span>
+        <span class="step-state">已跑通（局部）</span>
+      </button>
+      <button class="route-step" type="button" data-step="3" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S03</span><i class="status-dot partial"></i></span>
+        <strong>生境质量与生态系统服务</strong>
+        <span class="step-meta">InVEST · 生境质量 · NDR</span>
+        <span class="step-state">试算中</span>
+      </button>
+      <button class="route-step" type="button" data-step="4" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S04</span><i class="status-dot partial"></i></span>
+        <strong>关键物种栖息地</strong>
+        <span class="step-meta">HSI · 裸鲤 / 水鸟 / 普氏原羚</span>
+        <span class="step-state">部分完成</span>
+      </button>
+      <button class="route-step" type="button" data-step="5" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S05</span><i class="status-dot todo"></i></span>
+        <strong>生态风险评价</strong>
+        <span class="step-meta">CRI · 暴露—敏感性—风险等级</span>
+        <span class="step-state">指标待定稿</span>
+      </button>
+      <button class="route-step" type="button" data-step="6" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S06</span><i class="status-dot partial"></i></span>
+        <strong>“水—草—鱼—鸟”网络</strong>
+        <span class="step-meta">回归 · AICc · LOOCV · ENA</span>
+        <span class="step-state">统计网络已建</span>
+      </button>
+      <button class="route-step" type="button" data-step="7" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S07</span><i class="status-dot todo"></i></span>
+        <strong>稳定性与脆弱性</strong>
+        <span class="step-meta">ENSI · NVI · 节点扰动</span>
+        <span class="step-state">未启动</span>
+      </button>
+      <button class="route-step" type="button" data-step="8" aria-pressed="false">
+        <span class="step-top"><span class="step-num">S08</span><i class="status-dot partial"></i></span>
+        <strong>综合功能与生态阈值</strong>
+        <span class="step-meta">EFI · 响应曲线 · 安全区间</span>
+        <span class="step-state">框架 + 试算</span>
+      </button>
+    </div>
+
+    <div class="route-detail" id="routeDetail" aria-live="polite">
+      <div class="detail-main">
+        <div class="detail-head">
+          <span id="detailCode">S02</span>
+          <h3 id="detailTitle">湖岸生态空间重构</h3>
+          <span class="status-pill" id="detailStatus">已跑通</span>
+        </div>
+        <p class="detail-question" id="detailQuestion"></p>
+        <dl class="detail-grid">
+          <div><dt>输入</dt><dd id="detailInput"></dd></div>
+          <div><dt>方法</dt><dd id="detailMethod"></dd></div>
+          <div><dt>产出</dt><dd id="detailOutput"></dd></div>
+          <div><dt>判断</dt><dd id="detailJudge"></dd></div>
+        </dl>
+        <p class="detail-note" id="detailNote"></p>
+      </div>
+      <aside class="detail-side">
+        <p class="side-label">在证据链上的位置</p>
+        <p class="side-chain" id="detailChain"></p>
+        <p class="side-source" id="detailSource"></p>
+      </aside>
+    </div>
+
+    <div class="chains">
+      <article class="chain">
+        <p class="chain-label">空间链</p>
+        <p class="chain-flow">水位 → 岸线迁移 → 淹没与连通 → 景观格局 / 生境质量</p>
+        <p class="chain-note">回答“湖岸变成什么样”。已具备 DEM 校正、三尺度景观指数与 1990–2025 生境质量。</p>
+      </article>
+      <article class="chain">
+        <p class="chain-label">物种链</p>
+        <p class="chain-flow">水位 / 盐度 / 食物 → 裸鲤、水鸟、普氏原羚 → 栖息地适宜性 → 风险</p>
+        <p class="chain-note">回答“物种还住不住得下”。普氏原羚 HSI 已试算，裸鲤与水鸟的因子体系仍未定稿。</p>
+      </article>
+      <article class="chain">
+        <p class="chain-label">网络链</p>
+        <p class="chain-flow">水 — 藻 — 鱼 — 鸟 / 兽 → 稳定性 → EFI → 阈值</p>
+        <p class="chain-note">回答“系统会不会换一种状态”。链路已做统计筛选，但阈值曲线尚未生成。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="models">
+    <div class="sec-head">
+      <p class="sec-index">03 / MODEL SUITE</p>
+      <h2>七个模块，一条从岸线到阈值的流水线</h2>
+      <p class="sec-lede">模型集不是七个独立模型，而是共享同一套水位情景与空间底图。任一环缺失，后面的阈值都无法闭合。</p>
+    </div>
+
+    <div class="model-toolbar" role="group" aria-label="按状态筛选模块">
+      <div class="filters">
+        <button class="filter active" type="button" data-filter="all">全部 <span>8</span></button>
+        <button class="filter" type="button" data-filter="done">基本跑通 <span>1</span></button>
+        <button class="filter" type="button" data-filter="partial">试算中 <span>4</span></button>
+        <button class="filter" type="button" data-filter="todo">待定稿 / 未启动 <span>3</span></button>
+      </div>
+      <p class="filter-count" id="modelCount">显示 8 / 8</p>
+    </div>
+
+    <div class="model-grid" id="modelGrid">
+      <article class="model-card" data-status="done">
+        <div class="model-head"><span class="model-code">M1-01</span><span class="status-pill done">基本跑通</span></div>
+        <h3>水位—湖岸生态空间响应</h3>
+        <p class="model-desc">把水位情景压到 DEM、岸线与遥感分类上，模拟湖面外扩、岸线迁移和湿地—草地—水体的转换。</p>
+        <div class="tags"><span>DEM</span><span>遥感</span><span>GIS</span></div>
+        <p class="model-out"><b>产出</b> 岸线 / 湿地 / 草地 / 水体 / 连通性 / 破碎化</p>
+        <div class="progress"><span style="width:75%"></span></div>
+        <p class="model-state">DEM 偏差已订正；三尺度景观指数完成；情景淹没范围待生成</p>
+      </article>
+
+      <article class="model-card" data-status="partial">
+        <div class="model-head"><span class="model-code">M1-02</span><span class="status-pill partial">试算中</span></div>
+        <h3>生态系统服务与生境质量</h3>
+        <p class="model-desc">用 InVEST 评估生境质量、水源涵养与营养盐输送；判断淹没草地会把多少陆源氮磷带进湖里。</p>
+        <div class="tags"><span>InVEST</span><span>Habitat Quality</span><span>NDR</span></div>
+        <p class="model-out"><b>产出</b> 生境质量 / 水源涵养 / 营养盐通量</p>
+        <div class="progress"><span style="width:60%"></span></div>
+        <p class="model-state">1990–2025 生境质量已产出；NDR 缺本地化参数与淹没释放系数</p>
+      </article>
+
+      <article class="model-card" data-status="partial">
+        <div class="model-head"><span class="model-code">M1-03</span><span class="status-pill partial">试算中</span></div>
+        <h3>关键物种栖息地响应</h3>
+        <p class="model-desc">以 HSI = Σ(ω<sub>j</sub> × S<sub>ij</sub>) 合成关键物种的栖息地适宜性，识别适宜生境面积与通道变化。</p>
+        <div class="tags"><span>HSI</span><span>裸鲤</span><span>水鸟</span><span>普氏原羚</span></div>
+        <p class="model-out"><b>产出</b> HSI 栅格 / 适宜生境面积 / 洄游与迁徙通道</p>
+        <div class="progress"><span style="width:45%"></span></div>
+        <p class="model-state">普氏原羚与 ssp126 / ssp585 变化图已试算；裸鲤、水鸟因子与权重待建</p>
+      </article>
+
+      <article class="model-card" data-status="todo">
+        <div class="model-head"><span class="model-code">M1-04</span><span class="status-pill define">待定稿</span></div>
+        <h3>生态风险评价</h3>
+        <p class="model-desc">面向关键物种与关键生境，识别不同水位情景下的暴露、敏感性与潜在高风险区。</p>
+        <div class="tags"><span>CRI</span><span>暴露—敏感性</span><span>风险分级</span></div>
+        <p class="model-out"><b>产出</b> 风险指数 / 风险等级 / 风险空间</p>
+        <div class="progress"><span style="width:25%"></span></div>
+        <p class="model-state">黑颈鹤、普氏原羚风险对象已明确；统一公式、权重与分级尚未定稿</p>
+      </article>
+
+      <article class="model-card" data-status="partial">
+        <div class="model-head"><span class="model-code">M1-05</span><span class="status-pill partial">试算中</span></div>
+        <h3>生态网络分析</h3>
+        <p class="model-desc">构建“水—草—鱼—鸟”多营养级网络，分析节点、链路与连通度随水位的变化。</p>
+        <div class="tags"><span>ENA</span><span>AICc</span><span>LOOCV</span><span>网络连通度</span></div>
+        <p class="model-out"><b>产出</b> 关键链路 / 连通度 C / 关键节点 / 能量流</p>
+        <div class="progress"><span style="width:55%"></span></div>
+        <p class="model-state">2020–2025 统计网络已建并复核；能量流与 ENA 指标仍待补</p>
+      </article>
+
+      <article class="model-card" data-status="todo">
+        <div class="model-head"><span class="model-code">M1-06</span><span class="status-pill todo">未启动</span></div>
+        <h3>稳定性与脆弱性</h3>
+        <p class="model-desc">用 ENSI 评价网络在水位扰动下的韧性、连通与稳态维持能力，用 NVI 定位脆弱节点。</p>
+        <div class="tags"><span>ENSI</span><span>NVI</span><span>情景扰动</span></div>
+        <p class="model-out"><b>产出</b> 系统稳定性 / 节点脆弱性 / 关键保护节点</p>
+        <div class="progress"><span style="width:5%"></span></div>
+        <p class="model-state">公式形式已给（NVI<sub>i</sub> = ΔF<sub>i</sub> / F<sub>i,baseline</sub>），尚无结果</p>
+      </article>
+
+      <article class="model-card" data-status="partial">
+        <div class="model-head"><span class="model-code">M1-07</span><span class="status-pill partial">试算中</span></div>
+        <h3>综合生态功能与阈值</h3>
+        <p class="model-desc">把水文连通、适宜生境数量与生境质量合成 EFI，建立水位—EFI 响应曲线并识别安全区间。</p>
+        <div class="tags"><span>EFI</span><span>WCI</span><span>非线性拟合</span><span>阈值</span></div>
+        <p class="model-out"><b>产出</b> EFI 曲线 / 生态阈值 / 增益—稳定—转折—衰退区间</p>
+        <div class="progress"><span style="width:40%"></span></div>
+        <p class="model-state">三要素框架与 WCI 试算完成；权重、连续情景与曲线拟合未完成</p>
+      </article>
+
+      <article class="model-card wide" data-status="todo">
+        <div class="model-head"><span class="model-code">M1-O08</span><span class="status-pill todo">未启动</span></div>
+        <h3>三维综合表达</h3>
+        <p class="model-desc">把“水位—空间—生态响应”合成可视化的三维成果，支撑生态安全水位管理与保护决策。</p>
+        <div class="tags"><span>三维响应曲面</span><span>GIS 工程</span><span>交互成果</span></div>
+        <p class="model-out"><b>产出</b> 三维响应曲面 / 时间—空间—生态状态立方体 / 阈值分区图</p>
+        <div class="progress"><span style="width:0%"></span></div>
+        <p class="model-state">尚未启动；依赖 M1-07 输出与统一情景</p>
+      </article>
+    </div>
+
+    <div class="formula-strip">
+      <div><span class="formula-label">EFI</span><code>EFI = w₁·WCI/WCI<sub>max</sub> + w₂·S/S<sub>max</sub> + w₃·H/H<sub>max</sub></code></div>
+      <div><span class="formula-label">连通度</span><code>C = L / [n(n−1)]</code></div>
+      <div><span class="formula-label">节点变化</span><code>NVI<sub>i</sub> = ΔF<sub>i</sub> / F<sub>i,baseline</sub></code></div>
+      <p class="formula-note">公式来自项目《模型集》。其中 WCI 为水文连通性，S 为适宜生境面积，H 为生境质量。</p>
+    </div>
+  </section>
+
+  <section class="section" id="results">
+    <div class="sec-head">
+      <p class="sec-index">04 / EVIDENCE</p>
+      <h2>已经跑出来的七组证据</h2>
+      <p class="sec-lede">这些是工作文档中的阶段性结果，而非结题结论。每张卡片都标注了来源文档与需要保留的口径。</p>
+    </div>
+
+    <div class="result-grid">
+      <article class="result-card">
+        <div class="result-head"><span class="result-num">R1</span><h3>DEM 系统偏差校正</h3><span class="result-tag">空间底图</span></div>
+        <div class="chart" id="chartDem"></div>
+        <ul class="reading">
+          <li>11 个年份的岸线高程偏差中位数 <b>1.214 m</b>，范围 0.746–1.589 m。</li>
+          <li>水位与 DEM 岸线中位高程相关 <b>r = 0.969</b>，回归斜率 <b>1.030</b>。</li>
+          <li>2010→2022 水位升 <b>2.98 m</b>，DEM 岸线升 <b>2.88 m</b>。</li>
+        </ul>
+        <p class="source">来源：执行 / DEM校正.docx</p>
+      </article>
+
+      <article class="result-card">
+        <div class="result-head"><span class="result-num">R2</span><h3>湖岸带景观格局</h3><span class="result-tag">1990–2022</span></div>
+        <div class="direction-panel">
+          <div><span class="arrow-down">↓</span><b>ED</b><small>边缘密度持续下降</small></div>
+          <div><span class="arrow-up">↑</span><b>AI</b><small>聚合度持续上升</small></div>
+          <div><span class="arrow-flat">≈</span><b>三尺度</b><small>100 / 300 / 500 m 方向一致</small></div>
+        </div>
+        <ul class="reading">
+          <li>湖岸由较零散、边界复杂，转向较集中、聚合度更高的状态。</li>
+          <li>300 m 为主尺度，100 m 与 500 m 用于稳健性验证。</li>
+          <li>草原、湿地和裸地存在较稳定的同步响应；水域面积比例的同期关系较弱。</li>
+        </ul>
+        <p class="source">来源：执行 / 湖岸带景观格局分析.docx</p>
+      </article>
+
+      <article class="result-card">
+        <div class="result-head"><span class="result-num">R3</span><h3>生境质量（InVEST）</h3><span class="result-tag">1990–2025</span></div>
+        <div class="chart" id="chartHq"></div>
+        <ul class="reading">
+          <li>流域均值 0.759（1990）→ 0.774（2015 峰值）→ 0.769（2024）→ 0.771（2025）。</li>
+          <li>威胁参数：耕地 4 km / 权重 0.7；裸地 2 km / 0.2；半饱和参数 k = 0.5。</li>
+          <li>2024 年空间上呈“西北与河口带改善、环湖带局部退化”的格局。</li>
+        </ul>
+        <p class="source">来源：执行 / 生境质量.docx · 生态功能指数.docx</p>
+      </article>
+
+      <article class="result-card">
+        <div class="result-head"><span class="result-num">R4</span><h3>水文连通性与 EFI 三要素</h3><span class="result-tag">WCI 试算</span></div>
+        <div class="chart" id="chartWci"></div>
+        <ul class="reading">
+          <li>1000 m 缓冲区连通面积合计 2.15（2010）→ 18.22（2020）→ 13.04 km²（2022）。</li>
+          <li>湿地直接连通面积 0.25 → 1.29 → 0.90 km²；连通比例 A 从 0.0018 升至 0.2205。</li>
+          <li>规则：湿地与当年湖界 / 河线 30 m 内视为连通；缓冲 60 m；填洼 2 m；仅铁路作障碍。</li>
+        </ul>
+        <p class="source">来源：执行 / 生态功能指数.docx</p>
+      </article>
+
+      <article class="result-card span-2">
+        <div class="result-head"><span class="result-num">R5</span><h3>“水—草—鱼—鸟”统计网络</h3><span class="result-tag">AICc + LOOCV</span></div>
+        <div class="result-split">
+          <div class="chart" id="chartNet"></div>
+          <ul class="reading">
+            <li>2020–2025：裸鲤资源量 ~ 水位 <b>R² = 0.912</b>；水鸟 ~ 裸鲤 + 浮游动物 <b>0.850</b>；普氏原羚 ~ 可食生物量 + 水位 <b>0.650</b>。</li>
+            <li>2014–2023 复核：鱼 ~ 水位 <b>0.932</b>；兽 ~ 可食 + 水位 <b>0.968</b>；鸟 ~ 鱼 <b>0.564</b>。</li>
+            <li>藻类环节最弱：Chl-a ~ 水位 <b>R² = 0.024</b>；PP 加入盐度后 R² 升至 0.27，但 LOOCV 误差反而变大，判断为过拟合。</li>
+            <li>结论：<b>鱼—水位</b>与<b>兽—草</b>两段最稳；<b>水—藻</b>第一环尚未成立。</li>
+          </ul>
+        </div>
+        <p class="source">来源：执行 / 生态网络模型（水藻草鱼鸟兽）.docx</p>
+      </article>
+
+      <article class="result-card">
+        <div class="result-head"><span class="result-num">R6</span><h3>淹没草地与刚毛藻</h3><span class="result-tag">2005–2025</span></div>
+        <div class="chart" id="chartAlgae"></div>
+        <ul class="reading">
+          <li>年新增水域 282 ha（2005）→ 31,060 ha（2025），累计扩张约 110 倍。</li>
+          <li>新增水域中草地来源占比 87.9%（2005）→ 59.6%（2025）。</li>
+          <li>2024 年三期藻华 <b>91.19%</b> 出现在 2004 年后由草地转化的水体。</li>
+        </ul>
+        <p class="source">来源：文章 / 第四纪研究.docx</p>
+      </article>
+
+      <article class="result-card">
+        <div class="result-head"><span class="result-num">R7</span><h3>水质基座与趋势外推</h3><span class="result-tag">2020–2025</span></div>
+        <div class="chart" id="chartTn"></div>
+        <ul class="reading">
+          <li>605 条带日期记录、72 个点位；TN 均值 0.866 mg/L，pH 均值 9.16，DO 均值 6.62 mg/L。</li>
+          <li>TN 年均值由 0.902（2020）降至 0.701 mg/L（2025），中间年份波动。</li>
+          <li>已建立 TN / TP / 盐度的线性与二次拟合及 95% 置信区间外推流程。</li>
+        </ul>
+        <p class="source">来源：数据整理.xlsx · 水质预测.docx</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="data">
+    <div class="sec-head">
+      <p class="sec-index">05 / DATA FOUNDATION</p>
+      <h2>六年的监测，撑起九个数据表</h2>
+      <p class="sec-lede">数据基座覆盖水、藻、鱼、鸟、草、兽与水质。它决定了网络分析能走多远，也暴露了最需要补的短板。</p>
+    </div>
+
+    <div class="data-layout">
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>工作表</th><th>主要内容</th><th>覆盖</th><th>服务的模块</th></tr></thead>
+          <tbody>
+            <tr><td>综合年表</td><td>水位、湖面积、湖岸线、裸鲤、水鸟、植被生物量、浮游生物种数</td><td>2020–2025</td><td>M1-05 / M1-07</td></tr>
+            <tr><td>鸟类</td><td>斑头雁、棕头鸥、渔鸥、普通鸬鹚、黑颈鹤、凤头鸊鷉、大天鹅</td><td>2020–2025</td><td>M1-03 / M1-05</td></tr>
+            <tr><td>植被</td><td>群落高度、株丛数、覆盖度；8 类群落</td><td>2020–2025</td><td>M1-03 / M1-05</td></tr>
+            <tr><td>普氏原羚活动区</td><td>总生物量、可食生物量、不可食生物量、可食率</td><td>2020–2025</td><td>M1-03 / M1-05</td></tr>
+            <tr><td>水质</td><td>水温、pH、DO、COD<sub>Mn</sub>、COD、氨氮、TP、TN、电导率</td><td>605 条 / 72 点位</td><td>M1-02 / M1-05</td></tr>
+            <tr><td>水质站点</td><td>河流 / 湖泊 / 地下水点位坐标与名称</td><td>72 个</td><td>空间制图</td></tr>
+            <tr><td>浮游动物</td><td>丰度（湖区、入湖河道、环湖、洱海、尕海）</td><td>2020–2025</td><td>M1-05</td></tr>
+            <tr><td>浮游植物</td><td>丰度（同上分区）</td><td>2020–2025</td><td>M1-05</td></tr>
+            <tr><td>底栖动物</td><td>丰度与生物量</td><td>2020–2025</td><td>M1-05</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="data-side">
+        <div class="side-block">
+          <p class="side-label">外部数据</p>
+          <ul class="plain-list">
+            <li>CLCD 30 m 土地利用（1990–2025）</li>
+            <li>DEM 与河流 / 湖泊边界</li>
+            <li>青藏高原 ≥1 km² 湖泊数据集 v3.1</li>
+            <li>CHELSA 未来气候情景</li>
+            <li>2024 年刚毛藻水华栅格（优于 5 cm）</li>
+          </ul>
+        </div>
+        <div class="side-block warn">
+          <p class="side-label">数据质量提示</p>
+          <ul class="plain-list">
+            <li>水质存在检出限标记（如 &lt;0.025）与缺测，不能直接当连续变量。</li>
+            <li>部分字段存在缺失与单位口径不一致（如底栖动物丰度标为 cells/L），合并前需以数据字典复核。</li>
+            <li>2022–2024 年浮游动物种数缺失；2025 年水鸟总数缺失。</li>
+            <li>植被生物量（kg/hm²）、底栖生物量（mg/L）等口径不同，跨表计算前需换算。</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="datacards">
+      <div><b>6</b><span>年连续监测</span></div>
+      <div><b>72</b><span>水质点位</span></div>
+      <div><b>8</b><span>植被群落类型</span></div>
+      <div><b>7</b><span>水鸟指示种</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="stage">
+    <div class="sec-head">
+      <p class="sec-index">06 / STAGE ASSESSMENT</p>
+      <h2>现在走到哪一步？</h2>
+      <p class="sec-lede">一句话：数据基座与单环节验证已经成形，但“情景—阈值—三维表达”还没有闭环。</p>
+    </div>
+
+    <div class="verdict">
+      <div class="verdict-left">
+        <p class="verdict-label">阶段性判断 · 2026.10</p>
+        <p class="verdict-text">处于 <strong>模型原型验证期</strong>：单环节结果可信度较高，<br>系统级结论尚未生成。</p>
+        <p class="verdict-note">进度比例为编者依据文档完成度判断，不是项目考核值。</p>
+      </div>
+      <div class="verdict-right">
+        <div class="big-progress"><b>≈40%</b><span>模型集整体</span></div>
+      </div>
+    </div>
+
+    <div class="progress-board">
+      <div class="pbar"><div class="pbar-head"><span>水位—生态响应模型集</span><b>40%</b></div><div class="track"><i style="width:40%"></i></div><p>7 个模块中 5 个有试算结果，ENSI/NVI 与三维表达未启动。</p></div>
+      <div class="pbar"><div class="pbar-head"><span>耦合演变轨迹数据集</span><b>55%</b></div><div class="track"><i style="width:55%"></i></div><p>核心变量齐备；缺数据字典、元数据与统一质量控制说明。</p></div>
+      <div class="pbar"><div class="pbar-head"><span>生态—水文协同演化图集</span><b>30%</b></div><div class="track"><i style="width:30%"></i></div><p>已有生境质量、HSI、景观格局图；三类专题图尚未成集。</p></div>
+      <div class="pbar"><div class="pbar-head"><span>论文与报告</span><b>25%</b></div><div class="track"><i style="width:25%"></i></div><p>专刊论文框架与结果清单已列，正文与图件仍在准备。</p></div>
+    </div>
+
+    <div class="two-lists">
+      <div class="list-card">
+        <h3><span class="mark ok">✓</span> 已经成立</h3>
+        <ul>
+          <li>DEM 系统偏差订正与岸线一致性检验</li>
+          <li>1990–2025 三尺度湖岸景观指数</li>
+          <li>1990–2025 InVEST 生境质量序列</li>
+          <li>WCI 试算与 EFI 三要素框架</li>
+          <li>2020–2025 “水—草—鱼—鸟”统计网络</li>
+          <li>淹没草地—刚毛藻耦合证据链</li>
+          <li>605 条水质记录与趋势外推流程</li>
+          <li>普氏原羚 HSI 与未来情景试算</li>
+        </ul>
+      </div>
+      <div class="list-card">
+        <h3><span class="mark no">—</span> 尚未闭环</h3>
+        <ul>
+          <li>S00–S06 水位情景数值仍为“待填写”</li>
+          <li>EFI 连续响应曲线与生态阈值</li>
+          <li>ENSI / NVI 稳定性与脆弱性结果</li>
+          <li>ENA 能量流与网络结构指标</li>
+          <li>裸鲤、水鸟的 HSI 因子与权重</li>
+          <li>CRI 指标、权重与分级</li>
+          <li>三维模型与三类专题图集</li>
+          <li>4 项数据集的数据字典与元数据</li>
+          <li>鱼类环境容纳力核算（FPP / FCCI）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="risk-block">
+      <h3>最需要正视的六个风险</h3>
+      <div class="table-wrap">
+        <table class="risk-table">
+          <thead><tr><th>风险</th><th>证据</th><th>影响</th><th>下一步</th></tr></thead>
+          <tbody>
+            <tr><td>观测序列偏短</td><td>2020–2025 共 6 年；EFI 仅 5 个年度点</td><td>阈值与稳定性不确定性大</td><td>用多水位情景模拟补点，报告置信区间</td></tr>
+            <tr><td>藻类环节失效</td><td>Chl-a ~ 水位 R² = 0.024；PP 多因子 LOOCV 变差</td><td>“水—藻—鱼”链条断点</td><td>换指标 / 非线性模型，或把藻类降为条件变量</td></tr>
+            <tr><td>连通性规则简化</td><td>30 m 接触判定、2 m 填洼、仅铁路障碍</td><td>WCI 可能高估或低估</td><td>用 DEM 连续低地路径与多障碍情景复核</td></tr>
+            <tr><td>公式未定稿</td><td>CRI、ENSI、NVI 仅有形式，无权重</td><td>评审与复现风险</td><td>专题审定指标，先做权重敏感性分析</td></tr>
+            <tr><td>数据质量</td><td>检出限、缺测、单位口径不一</td><td>趋势可能被误判</td><td>建数据字典与清洗日志，原始数据只读</td></tr>
+            <tr><td>交付窗口紧</td><td>2027-08 阶段成果；2027-12 结题</td><td>图集与三维表达被挤压</td><td>先冻结指标体系，再批量出图</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="delivery">
+    <div class="sec-head">
+      <p class="sec-index">07 / DELIVERY</p>
+      <h2>考核指标与时间表</h2>
+      <p class="sec-lede">交付不是一篇论文，而是“报告 + 模型 + 数据集 + 图集 + 专报”的组合，全部要通过专家评审。</p>
+    </div>
+
+    <div class="delivery-layout">
+      <div class="table-wrap">
+        <table class="kpi-table">
+          <thead><tr><th>维度</th><th>指标</th><th>要求</th></tr></thead>
+          <tbody>
+            <tr><td rowspan="5">产出</td><td>项目结题总报告</td><td>1 份</td></tr>
+            <tr><td>专题报告</td><td>4 份</td></tr>
+            <tr><td>连续监测序列</td><td>1 套，≥12 个月</td></tr>
+            <tr><td>模型集 / 图集 / 数据集</td><td>模型集 1 套（含 3 项模型；本页拆为 7 个功能模块）；图集 1 套（3 类）；数据集 1 套（4 项）</td></tr>
+            <tr><td>研究专报</td><td>1 份</td></tr>
+            <tr><td rowspan="3">质量</td><td>评审</td><td>总报告、专题报告、模型、图集、数据集均需通过专家评审</td></tr>
+            <tr><td>数据文件</td><td>数据字典、元数据、质量控制说明完整</td></tr>
+            <tr><td>监测有效性</td><td>有效数据获取率 ≥90%；记录完整率 100%</td></tr>
+            <tr><td rowspan="2">时间</td><td>阶段性成果</td><td>2027-08-15 前</td></tr>
+            <tr><td>全部任务</td><td>2027-12-31 前</td></tr>
+            <tr><td rowspan="2">成本</td><td>项目总成本</td><td>≤400 万元（招标 ≤378 万，自执行 ≤22 万）</td></tr>
+            <tr><td>满意度</td><td>≥90%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="delivery-side">
+        <div class="article-card">
+          <p class="side-label">近期论文出口</p>
+          <h3>《第四纪研究》专刊</h3>
+          <p class="article-q">拟回答：1956–2025 水位—面积—蓄水量的阶段变化；2004 年前后趋势转折的驱动；水位与多营养级响应的关联；未来情景下的淹没风险。</p>
+          <p class="article-meta">截稿 2026-11-30 · 预计 2027-03-30（第 2 期）</p>
+        </div>
+        <div class="timeline">
+          <div class="tl-item"><span>2026.11</span><p>专刊论文截稿</p></div>
+          <div class="tl-item"><span>2027.03</span><p>论文预计出版</p></div>
+          <div class="tl-item"><span>2027.08</span><p>阶段性成果验收</p></div>
+          <div class="tl-item"><span>2027.12</span><p>全部任务完成</p></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="notes">
+    <div class="sec-head">
+      <p class="sec-index">08 / NOTES</p>
+      <h2>阅读说明与证据边界</h2>
+      <p class="sec-lede">本站只做研究路线与进度的结构化导读，不替代正式报告、模型说明书或评审材料。</p>
+    </div>
+
+    <div class="notes-layout">
+      <div class="notes-main">
+        <details open>
+          <summary>资料范围是怎么确定的？</summary>
+          <p>逐份读取项目目录下的 14 份 Word 工作文档（约 2.7 万字、约 70 幅图件）与 1 份 Excel 数据汇编（9 个工作表），提取正文、表格、图表与数据分布；未读取外部原始栅格与受控数据。</p>
+        </details>
+        <details>
+          <summary>哪些数字可以直接引用？</summary>
+          <p>DEM 偏差、景观指数方向、生境质量均值、WCI 连通面积、网络 R²、淹没与刚毛藻比例、水质统计量均来自工作文档中的表格或图件。带“示意”字样的图（如首页曲线）不是计算结果；进度百分比是编者判断。</p>
+        </details>
+        <details>
+          <summary>为什么反复强调“未闭环”？</summary>
+          <p>模型集的七个模块共享水位情景。情景数值尚未填写，EFI 就无法形成连续曲线，阈值、ENSI/NVI 与三维表达也无法可靠生成。当前结果足以支撑单环节论证，但不足以支撑“安全水位”结论。</p>
+        </details>
+        <details>
+          <summary>与已有“研究路线图谱”网站是什么关系？</summary>
+          <p>本站是独立项目页面，聚焦“青海湖流域生态系统结构与功能响应”这一课题；另一个站点解读的是《青海湖高原湖泊湿地演变趋势及应对措施》报告。两者资料与对象不同，不互相替代。</p>
+        </details>
+        <div class="doc-table-wrap">
+          <p class="side-label">文档清单</p>
+          <table class="doc-table">
+            <tbody>
+              <tr><td>项目介绍以及要求</td><td>任务书、主线框架、成果定义</td></tr>
+              <tr><td>项目申请书</td><td>考核指标、时间与成本</td></tr>
+              <tr><td>模型集</td><td>七模块、公式、情景与验证框架</td></tr>
+              <tr><td>Invest模型</td><td>NDR / 生境质量参数与局限</td></tr>
+              <tr><td>水质预测</td><td>TN / TP / 盐度拟合与外推</td></tr>
+              <tr><td>执行 / DEM校正</td><td>岸线高程偏差订正</td></tr>
+              <tr><td>执行 / 湖岸带景观格局分析</td><td>三尺度景观指数</td></tr>
+              <tr><td>执行 / 生境质量</td><td>InVEST 参数与 1990–2025 结果</td></tr>
+              <tr><td>执行 / 生态功能指数</td><td>WCI / S / H 与 EFI</td></tr>
+              <tr><td>执行 / 生态网络模型</td><td>回归筛选、LOOCV、链路</td></tr>
+              <tr><td>执行 / 栖息地适宜性</td><td>普氏原羚 HSI 与未来情景</td></tr>
+              <tr><td>文献 / 相关文献阅读</td><td>水位、遥感与生态背景</td></tr>
+              <tr><td>文献 / 裸鲤 FPP 和 FCCI</td><td>鱼类生产力与环境容纳力（方法储备）</td></tr>
+              <tr><td>文章 / 第四纪研究</td><td>论文框架与结果清单</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <aside class="notes-side">
+        <div class="note-card">
+          <p class="side-label">一句话总结</p>
+          <p class="note-big">数据已经够用，模型还差“情景”这一脚。</p>
+          <p>项目最扎实的部分是空间底图与单环节证据；最薄弱的部分是把它们串成一条可调参、可复现的响应曲线。</p>
+        </div>
+        <div class="note-card">
+          <p class="side-label">建议的下一步</p>
+          <ol class="plain-list">
+            <li>先冻结 S00–S06 水位情景与统一空间底图。</li>
+            <li>用情景批量生成 WCI、S、H，拟合 EFI 曲线。</li>
+            <li>在情景网络上计算 ENSI / NVI，确定关键节点。</li>
+            <li>补裸鲤、水鸟 HSI 与 CRI 指标，再做敏感性分析。</li>
+            <li>用 FPP / FCCI 补鱼类环境容纳力核算，支撑放流分区。</li>
+            <li>最后启动三维表达与三类专题图集。</li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-inner">
+    <div>
+      <p class="foot-title">青海湖流域生态系统结构与功能响应</p>
+      <p class="foot-sub">研究路线与进展 · 资料截至 2026 年 10 月</p>
+    </div>
+    <div class="foot-right">
+      <p>由项目工作文档整理，用于研究交流；不替代正式成果与评审材料。</p>
+      <p><a href="https://github.com/QHDSM" target="_blank" rel="noopener">GitHub · QHDSM</a></p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="回到顶部">↑</button>
+<script src="app.js"></script>
+</body>
+</html>
